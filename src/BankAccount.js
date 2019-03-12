@@ -5,3 +5,7 @@ function bankAccount() {
 bankAccount.prototype.deposit = function(amount) {
   this._balance = this._balance + amount
 }
+
+bankAccount.prototype.withdraw = function(amount) {
+  this._balance = this._balance - amount
+}

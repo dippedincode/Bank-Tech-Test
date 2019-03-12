@@ -10,4 +10,10 @@ describe("Bank Account", function() {
     expect(myAccount._balance).toEqual(1000)
   })
 
+  it("should allow a customer to make a withdrawal of 500", function() {
+    myAccount.deposit(1000)
+    myAccount.withdraw(300)
+    expect(myAccount._balance).toEqual(700)
+  })
+
 })
